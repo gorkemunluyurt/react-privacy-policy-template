@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* 'Inter' fontunu ekledik, sistem fontları yedek olarak kalır */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Biraz daha açık bir gri arka plan */
+}
+
+/* Ana konteyner: Sayfayı kaplar, içeriği ortalar */
+.privacy-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem; /* Kenar boşluğunu biraz artırdık */
+  box-sizing: border-box;
+}
+
+/* İçerik kartı: Daha yumuşak gölge, daha belirgin yuvarlak köşeler */
+.policy-card {
+  background-color: #ffffff;
+  /* Daha yumuşak ve katmanlı bir gölge */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 0.75rem; /* Daha belirgin yuvarlak köşeler (12px) */
+  padding: 2rem; /* İç boşluğu artırdık */
+  max-width: 60rem; /* Maksimum genişliği biraz artırdık */
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e9ecef; /* Çok hafif bir kenarlık */
+}
+
+/* Başlık stilleri: Daha modern renk ve ağırlık */
+.policy-title {
+  font-size: 2rem; /* Yazı boyutunu ayarladık */
+  font-weight: 600; /* Biraz daha ince ama hala belirgin (semibold) */
+  text-align: center;
+  color: #343a40; /* Daha modern bir koyu gri */
+  margin-bottom: 2rem; /* Alt boşluğu artırdık */
+  line-height: 1.3;
+}
+
+/* Politika metni stilleri: Okunabilirlik için renk ve satır yüksekliği ayarı */
+.policy-text {
+  color: #495057; /* Biraz daha açık gri, daha iyi okunabilirlik */
+  font-size: 1rem;
+  line-height: 1.7; /* Satır yüksekliğini artırdık */
+  white-space: pre-wrap;
+}
+
+/* Politika metni içindeki kalın yazılar için stil */
+.policy-text strong {
+    color: #212529; /* Kalın yazıları biraz daha belirgin yapalım */
+    font-weight: 600;
+}
+
+/* Alt bilgi stilleri: Daha az dikkat çeken renk */
+.policy-footer {
+  margin-top: 2.5rem; /* Üst boşluğu artırdık */
+  text-align: center;
+  font-size: 0.875rem;
+  color: #adb5bd; /* Daha açık, daha az dikkat çeken gri */
+}
+
+/* Orta boyutlu ekranlar ve üzeri için responsive stiller (768px) */
+@media (min-width: 768px) {
+  .policy-card {
+    padding: 3rem; /* Daha büyük ekranlarda daha fazla iç boşluk */
+  }
+
+  .policy-title {
+    font-size: 2.5rem; /* Daha büyük başlık */
+  }
+
+   .policy-text {
+     font-size: 1.05rem; /* Biraz daha büyük metin */
+  }
+}
+
+/* Google Fonts'tan Inter fontunu yüklemek için (HTML <head> içine ekleyebilirsiniz veya CSS import kullanabilirsiniz) */
+/* Bu @import kuralını CSS dosyanızın en başına ekleyin */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
